@@ -4,6 +4,7 @@ import {SafeAreaView, StyleSheet, Text} from 'react-native';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import {createStackNavigator} from '@react-navigation/stack';
 import ChatListScreen from './screens/ChatListScreen';
+import ChatSettingScreen from './screens/ChatSettingScreen';
 
 const Stack = createStackNavigator();
 
@@ -13,6 +14,7 @@ const App = () => {
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen name="ChatList" component={ChatListScreen} />
+          <Stack.Screen name="ChatSetting" component={ChatSettingScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaView>
