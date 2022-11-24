@@ -1,7 +1,8 @@
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, Button} from 'react-native';
 import React from 'react';
 
-const ChatListScreen = () => {
+const ChatListScreen = ({navigation}) => {
+  console.log('navigation', navigation);
   return (
     <View style={styles.container}>
       <Text>ChatListScreens</Text>
@@ -14,6 +15,10 @@ const ChatListScreen = () => {
       <Text>ChatListScreens</Text>
       <Text>ChatListScreens</Text>
       <Text>ChatListScreens</Text>
+      <Button
+        title="navigation to setting pae"
+        onPress={() => navigation.navigate('ChatSetting')}
+      />
     </View>
   );
 };
