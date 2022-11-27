@@ -5,15 +5,7 @@ const ChatListScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Text>ChatListScreens</Text>
-      <Text>ChatListScreens</Text>
-      <Text>ChatListScreens</Text>
-      <Text>ChatListScreens</Text>
-      <Text>ChatListScreens</Text>
-      <Text>ChatListScreens</Text>
-      <Text>ChatListScreens</Text>
-      <Text>ChatListScreens</Text>
-      <Text>ChatListScreens</Text>
-      <Text>ChatListScreens</Text>
+
       <Button
         title="navigation to setting pae"
         onPress={() => navigation.navigate('ChatSetting')}

@@ -1,13 +1,14 @@
 import {View, Text, StyleSheet} from 'react-native';
 import React from 'react';
 
-const ChatSettingScreen = () => {
+const SettingScreen = () => {
   return (
-    <View>
-      <Text>ChatSettingScreen</Text>
+    <View style={styles.container}>
+      <Text>SettingScreen</Text>
     </View>
   );
 };
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -15,4 +16,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ChatSettingScreen;
+export default SettingScreen;
