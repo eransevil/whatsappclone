@@ -7,11 +7,15 @@ import ChatListScreen from './screens/ChatListScreen';
 import ChatSettingScreen from './screens/ChatSettingScreen';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import SettingScreen from './screens/SettingScreen';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
 const TabNavigator = () => {
+  const chatIcon = <Icon name="wechat" size={25} color="#000000" />;
+  const settingIcon = <Icon name="user" size={25} color="#000000" />;
+
   return (
     <Tab.Navigator screenOptions={{headerTitle: ''}}>
       <Tab.Screen
@@ -19,6 +23,9 @@ const TabNavigator = () => {
         component={ChatListScreen}
         options={{
           tabBarLabel: 'Chats',
+          tabBarIcon: () => {
+            return chatIcon;
+          },
         }}
       />
       <Tab.Screen
@@ -26,6 +33,9 @@ const TabNavigator = () => {
         component={SettingScreen}
         options={{
           tabBarLabel: 'Settings',
+          tabBarIcon: () => {
+            return settingIcon;
+          },
         }}
       />
     </Tab.Navigator>
